@@ -1,0 +1,262 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container_div {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.main_nav_box {
+  width: calc(100% - 80%);
+  height: 100vh;
+  background-color: #f7f7f7;
+  z-index: -1;
+}
+.logo_box {
+  width: 100%;
+  padding: 60px 30px;
+  z-index: 100;
+}
+.logo {
+  width: 45px;
+  height: 45px;
+  background-color: red;
+  border-radius: 22px;
+  z-index: 1;
+  position: relative;
+  opacity: 0.9;
+}
+.logo::before {
+  content: "";
+  position: absolute;
+  right: -50%;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #242424;
+  border-radius: 50%;
+  opacity: 0.8;
+}
+.logo::after {
+  content: "";
+  position: absolute;
+  right: -100%;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: blueviolet;
+  border-radius: 50%;
+  opacity: 0.8;
+}
+.menu_box {
+  width: 100%;
+  padding: 20px 40px;
+  height: 140px;
+}
+.menu_box_2 {
+  width: 100%;
+  padding: 20px 40px;
+}
+.menu_item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.menu_item_2 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.round {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #232323;
+  border-radius: 20px;
+  margin: 0px 10px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.round_2 {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #232323;
+  border-radius: 20px;
+  margin: 0px 10px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.round::before {
+  content: "1";
+  width: 80%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.round_2::before {
+  content: "2";
+  width: 80%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #353535;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.round.active::before {
+  background-color: blueviolet;
+  color: #fff;
+}
+.round_2.active::before {
+  background-color: blueviolet;
+  color: #fff;
+}
+.item_text {
+  margin-left: 20px;
+}
+.menu_item::before {
+  content: "";
+  width: 5px;
+  height: 20px;
+  background-color: blueviolet;
+  position: absolute;
+  left: 26px;
+  bottom: -70%;
+  border-radius: 10px;
+}
+
+.menu_item::after {
+  content: "";
+  width: 5px;
+  height: 10px;
+  background-color: blueviolet;
+  position: absolute;
+  left: 26px;
+  bottom: -130%;
+  border-radius: 10px;
+}
+.menu_item_2::before {
+  content: "";
+  width: 5px;
+  height: 10px;
+  background-color: blueviolet;
+  position: absolute;
+  left: 26px;
+  top: -70%;
+  border-radius: 10px;
+}
+p {
+  font-size: 20px;
+  font-weight: 600;
+}
+small {
+  font-size: 13px;
+  color: #2525;
+}
+.rightsec {
+  width: calc(100% - 20%);
+  height: 100vh;
+  background-color: antiquewhite;
+  position: relative;
+}
+.div {
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+.div.active {
+  display: block;
+}
+
+.rightsec_one {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.button_box {
+  width: 100%;
+  height: 250px;
+  background-color: #f7f7f7;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+button {
+  margin: 5px 10px;
+}
+.btn_all {
+  padding: 10px 200px;
+}
+.btn_all Link {
+  margin: 0px 40px;
+}
+.second_btn {
+  background-color: darkslateblue;
+  color: #fff !important;
+  border: none;
+  padding: 10px 30px;
+  color: #262626;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-left: 20px;
+}
+.first_btn {
+  background-color: cornflowerblue;
+  border: none;
+  padding: 10px 30px;
+  color: #262626;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.sub_item {
+  width: 100%;
+  padding: 20px 40px;
+}
+.sub_item ul {
+  margin-left: 80px;
+}
+.sub_item ul li {
+  list-style: none;
+  font-size: 12px;
+  position: relative;
+  margin-top: 5px;
+}
+.sub_item ul li::before {
+  content: "";
+  width: 3px;
+  height: 25px;
+  background-color: blueviolet;
+  position: absolute;
+  left: -20px;
+  top: -115%;
+  border-bottom-left-radius: 5px;
+}
+.sub_item ul li::after {
+  content: "";
+  width: 15px;
+  height: 3px;
+  background-color: blueviolet;
+  position: absolute;
+  left: -18px;
+  bottom: 7px;
+  border-bottom-left-radius: 5px;
+}
